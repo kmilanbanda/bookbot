@@ -35,11 +35,11 @@ def sort_on(dict):
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
-        print(file_contents) # prints entire text of designated book
+        # print(file_contents) # prints entire text of designated book
 
         # prints start of report and word count
-        print("Begin report of book(s) ===\n")
-        print(f"Final Word Count: {word_count(file_contents)}\n")
+        print("Begin report of book(s) ===")
+        print(f"{word_count(file_contents)} words found in the document\n")
 
         # prepares character count dict-list and sorts it
         dict_list = convert_dict_to_dict_list(character_count(file_contents))
